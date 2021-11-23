@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color-Picker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        .color{
+            width: 700px;
+            height: 130px;
+            background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(255,255,0) 17%, rgb(0,255,0) 33%, rgb(0,255,255) 50%,  rgb(0,0,255) 67%, rgb(255,0,255) 83%, rgb(255,0,0) 100%);
+            border-radius: 3px;
+        }
+        input {
+            outline: none;
+            width: 700px;
+            background-color: inherit;
+            -webkit-appearance: none;
+            margin: 0;
+            padding: 0;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 130px;
+            width: 20px;
+            border-radius: 3px;
+            border: 1px solid #9b9b9b;
+            background: #dadada;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <h1>Color Picker</h1>
+    <div class="color"><input type="range" min="0" max="360"></div>
+  <script src="script.js"></script>
+</body>
+</html>
