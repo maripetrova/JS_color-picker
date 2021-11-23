@@ -1,7 +1,7 @@
 let div = document.querySelector("div");
 let inp = document.querySelector("input");
 
-inp.addEventListener("change", (e) => {
+inp.addEventListener("mousemove", (e) => {
     let c = 1
     let h = e.target.value;
     let h1 = h / 60;
